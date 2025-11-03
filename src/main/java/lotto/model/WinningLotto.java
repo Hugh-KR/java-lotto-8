@@ -3,6 +3,7 @@ package lotto.model;
 import java.util.List;
 
 import lotto.Lotto;
+import lotto.constants.ErrorConstants;
 
 public class WinningLotto {
     private final Lotto lotto;
@@ -17,7 +18,7 @@ public class WinningLotto {
     private void validateBonusNumber(final Lotto lotto, final int bonusNumber) {
         if (lotto.contains(bonusNumber)) {
             throw new IllegalArgumentException(
-                    "[ERROR] 보너스 번호는 당첨 번호와 중복될 수 없습니다.");
+                    ErrorConstants.DUPLICATE_BONUS_NUMBER_ERROR.getErrorMessage());
         }
     }
 

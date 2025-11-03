@@ -10,7 +10,9 @@ public enum ErrorConstants {
     OUT_OF_RANGE_NUMBER_ERROR("[ERROR] 로또 번호는 1부터 45 사이의 숫자여야 합니다."),
     EMPTY_BONUS_NUMBER_ERROR("[ERROR] 보너스 번호를 입력해주세요."),
     NON_NUMERIC_BONUS_NUMBER_ERROR("[ERROR] 보너스 번호는 숫자여야 합니다."),
-    DUPLICATE_BONUS_NUMBER_ERROR("[ERROR] 보너스 번호는 당첨 번호와 중복될 수 없습니다.");
+    DUPLICATE_BONUS_NUMBER_ERROR("[ERROR] 보너스 번호는 당첨 번호와 중복될 수 없습니다."),
+    INVALID_LOTTO_NUMBERS_COUNT_ERROR("[ERROR] 로또 번호는 6개여야 합니다."),
+    DUPLICATE_LOTTO_NUMBERS_ERROR("[ERROR] 로또 번호에 중복된 숫자가 있습니다.");
 
     private final String errorMessage;
 
