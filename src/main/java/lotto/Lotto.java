@@ -26,6 +26,10 @@ public class Lotto {
                 .count();
     }
 
+    public int countMatchNumbers(final Lotto otherLotto) {
+        return countMatchNumbers(otherLotto.getNumbers());
+    }
+
     public boolean contains(final int number) {
         return numbers.contains(number);
     }

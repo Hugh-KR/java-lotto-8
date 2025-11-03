@@ -30,6 +30,14 @@ class LottoTest {
     }
 
     @Test
+    void 다른_로또와_일치하는_개수를_계산한다() {
+        final Lotto lotto = new Lotto(List.of(1, 2, 3, 4, 5, 6));
+        final Lotto otherLotto = new Lotto(List.of(1, 2, 3, 7, 8, 9));
+        final int matchCount = lotto.countMatchNumbers(otherLotto);
+        assertThat(matchCount).isEqualTo(3);
+    }
+
+    @Test
     void 특정_번호를_포함하는지_확인한다() {
         final Lotto lotto = new Lotto(List.of(1, 2, 3, 4, 5, 6));
         assertThat(lotto.contains(3)).isTrue();

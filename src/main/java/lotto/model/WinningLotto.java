@@ -22,7 +22,7 @@ public class WinningLotto {
     }
 
     public LottoRank getRank(final Lotto userLotto) {
-        final int matchCount = userLotto.countMatchNumbers(lotto.getNumbers());
+        final int matchCount = userLotto.countMatchNumbers(lotto);
         final boolean hasBonus = userLotto.contains(bonusNumber);
         return LottoRank.valueOf(matchCount, hasBonus);
     }
