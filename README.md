@@ -109,3 +109,10 @@ src/
         └── validation/
             └── InputValidatorTest.java
 ```
+
+## 설계 원칙
+
+- MVC 패턴 기반 구조 (Controller, Model, View 분리)
+- Enum을 활용한 상수 관리
+- 디미터 법칙 준수 (객체 간 직접 상호작용 최소화)
+- 단일 책임 원칙 적용 (각 클래스는 하나의 책임만 담당)
